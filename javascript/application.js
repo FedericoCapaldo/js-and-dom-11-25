@@ -21,7 +21,7 @@
 // abbaMembersUnorderedList.style.listStyleType = "upper-roman";
 
 
-const abbaMemberListItems = document.querySelectorAll("li");
+const abbaMemberListItems = document.querySelectorAll(".abba");
 abbaMemberListItems.forEach((member) => {
     member.innerHTML += ` (${member.dataset.instrument})`
 });
