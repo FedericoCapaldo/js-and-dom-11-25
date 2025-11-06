@@ -23,5 +23,5 @@
 
 const abbaMemberListItems = document.querySelectorAll("li");
 abbaMemberListItems.forEach((member) => {
-  console.log(member.dataset.instrument)
+    member.innerHTML += ` (${member.dataset.instrument})`
 });
