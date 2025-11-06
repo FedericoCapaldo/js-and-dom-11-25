@@ -8,4 +8,6 @@ abba.forEach((member) => {
   list.appendChild(listItem);
 })
 
-document.body.insertAdjacentElement('beforeend', list);
+
+const container = document.querySelector(".container");
+container.appendChild(list);
