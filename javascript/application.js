@@ -1,13 +1,12 @@
-const abba = ["Bjorn", "Benny", "Anni-frid", "Agnetha"];
+const abbaNames = ["Bjorn", "Benny", "Anni-frid", "Agnetha"];
 
-const list = document.createElement("ul");
+const abbaNamesUnorderedList = document.createElement("ul");
 
-abba.forEach((member) => {
-  const listItem = document.createElement("li");
-  listItem.innerHTML = member;
-  list.appendChild(listItem);
+abbaNames.forEach((abbaMember) => {
+  const abbaMemberListItem = document.createElement("li");
+  abbaMemberListItem.innerHTML = abbaMember;
+  abbaNamesUnorderedList.appendChild(abbaMemberListItem);
 })
 
-
-const container = document.querySelector(".container");
-container.appendChild(list);
+const containerElement = document.querySelector(".container");
+containerElement.appendChild(abbaNamesUnorderedList);
