@@ -32,12 +32,12 @@
 //   event.target.classList.toggle("img-circle");
 // })
 
-const avatarImages = document.querySelectorAll(".avatar");
+// const avatarImages = document.querySelectorAll(".avatar");
 
-avatarImages.forEach((avatar) => {
-  avatar.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.currentTarget.classList.toggle("img-circle");
-    }
-  });
-})
+// avatarImages.forEach((avatar) => {
+//   avatar.addEventListener("keydown", (event) => {
+//     if (event.key === "Enter" || event.key === " ") {
+//       event.currentTarget.classList.toggle("img-circle");
+//     }
+//   });
+// })
