@@ -41,3 +41,9 @@
 //     }
 //   });
 // })
+
+const linkToGoogle = document.querySelector("#google-link");
+linkToGoogle.addEventListener("click", (event) => {
+  event.preventDefault(); // stops the browser from following the link
+  console.log("Clicked google button!")
+})
