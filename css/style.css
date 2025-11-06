@@ -24,6 +24,10 @@ h1, h2, h3 {
   color: green;
 }
 
+img {
+  transition: border-radius 500ms;
+}
+
 .img-circle {
   border-radius: 50%;
 }
