@@ -29,5 +29,5 @@
 const doggoImage = document.querySelector('#doggo');
 
 doggoImage.addEventListener("click", (event) => {
-  console.log(event);
+  event.target.classList.toggle("img-circle");
 })
