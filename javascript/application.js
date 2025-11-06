@@ -35,7 +35,9 @@
 const avatarImages = document.querySelectorAll(".avatar");
 
 avatarImages.forEach((avatar) => {
-  avatar.addEventListener("click", (event) => {
-    event.target.classList.toggle("img-circle");
-  })
+  avatar.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.currentTarget.classList.toggle("img-circle");
+    }
+  });
 })
