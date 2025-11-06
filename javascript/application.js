@@ -12,10 +12,10 @@ const containerElement = document.querySelector(".container");
 containerElement.appendChild(abbaNamesUnorderedList);
 
 
-const listItems = document.querySelectorAll("li");
-listItems.forEach((item) => {
-  item.innerHTML += " 🎵"
+const abbaMembersListElements = document.querySelectorAll("li");
+abbaMembersListElements.forEach((abbaMember) => {
+  abbaMember.innerHTML += " 🎵"
 })
 
-const ul = document.querySelector('ul');
-ul.style.listStyleType = "upper-roman";
+const abbaMembersUnorderedList = document.querySelector('ul');
+abbaMembersUnorderedList.style.listStyleType = "upper-roman";
