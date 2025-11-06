@@ -19,3 +19,9 @@
 
 // const abbaMembersUnorderedList = document.querySelector('ul');
 // abbaMembersUnorderedList.style.listStyleType = "upper-roman";
+
+
+const abbaMemberListItems = document.querySelectorAll("li");
+abbaMemberListItems.forEach((member) => {
+  console.log(member.dataset.instrument)
+});
