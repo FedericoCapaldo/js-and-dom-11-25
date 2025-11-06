@@ -47,3 +47,11 @@
 //   event.preventDefault(); // stops the browser from following the link
 //   console.log("Clicked google button!")
 // })
+
+const selectAllCheckbox = document.querySelector("#select-all-checkbox");
+selectAllCheckbox.addEventListener("click", (event) => {
+  const allAnimalCheckboxes = document.querySelectorAll(".form-check-input");
+  allAnimalCheckboxes.forEach((animalCheckbox) => {
+    animalCheckbox.checked = event.currentTarget.checked;
+  })
+})
