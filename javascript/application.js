@@ -25,3 +25,9 @@
 // abbaMemberListItems.forEach((member) => {
 //     member.innerHTML += ` (${member.dataset.instrument})`
 // });
+
+const doggoImage = document.querySelector('#doggo');
+
+doggoImage.addEventListener("click", (event) => {
+  console.log(event);
+})
