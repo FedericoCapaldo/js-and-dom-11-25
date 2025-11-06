@@ -26,8 +26,16 @@
 //     member.innerHTML += ` (${member.dataset.instrument})`
 // });
 
-const doggoImage = document.querySelector('#doggo');
+// const doggoImage = document.querySelector('#doggo');
 
-doggoImage.addEventListener("click", (event) => {
-  event.target.classList.toggle("img-circle");
+// doggoImage.addEventListener("click", (event) => {
+//   event.target.classList.toggle("img-circle");
+// })
+
+const avatarImages = document.querySelectorAll(".avatar");
+
+avatarImages.forEach((avatar) => {
+  avatar.addEventListener("click", (event) => {
+    event.target.classList.toggle("img-circle");
+  })
 })
